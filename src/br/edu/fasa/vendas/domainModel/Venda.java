@@ -14,7 +14,7 @@ public class Venda {
     private int id;
     private Date data;
     private Cliente Cliente;
-    private List<ItemVenda> ItemVenda;
+    private List<ItemVenda> ItemVenda; // letra minúscula e nome no plural
 
     public Cliente getCliente() {
         return Cliente;
@@ -47,6 +47,9 @@ public class Venda {
     public ItemVenda getItem(int n){
         return ItemVenda.get(n);
     }
+    
+    
+    // Falta um getItens, que retorna toda a lista
     
     public void removItem(int n){
         ItemVenda.remove(n);
