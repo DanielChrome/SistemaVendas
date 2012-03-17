@@ -11,6 +11,9 @@ package br.edu.fasa.vendas.domainModel;
  * 
  */
 public class ItemVenda {
+    
+    // o item também precisa de um id
+    
     private Produto Produto;
     private int quantidade;
     private float valor;
