@@ -6,7 +6,7 @@ package br.edu.fasa.vendas.domainModel;
 
 /**
  *
- * @author Chrome
+ * @author DanielChrome
  * @version 0.3.17
  */
 public class Venda {
