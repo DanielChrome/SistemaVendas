@@ -10,7 +10,7 @@ package br.edu.fasa.vendas.domainModel;
  * @version 0.3.17
  */
 public class Produto {
-    private int codProduto;
+    private int codProduto;  // Se você está dentro da classe produto o código não precisa se chamar codProtudo. ID está de bom tamanho.
     private String descricao;
     private int estoque;
 
