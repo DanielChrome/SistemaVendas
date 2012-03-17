@@ -7,6 +7,7 @@ package br.edu.fasa.vendas.domainModel;
 /**
  *
  * @author Chrome
+ * @version 0.3.16
  */
 public class Cliente {
     private int id;
