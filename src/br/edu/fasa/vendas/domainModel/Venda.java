@@ -4,14 +4,15 @@
  */
 package br.edu.fasa.vendas.domainModel;
 import java.util.List;
+import java.util.Date;
 /**
  *
  * @author DanielChrome
  * @version 0.3.17
  */
 public class Venda {
-    private int codVenda;
-    private String data;
+    private int id;
+    private Date data;
     private Cliente Cliente;
     private List<ItemVenda> ItemVenda;
 
@@ -23,19 +24,19 @@ public class Venda {
         this.Cliente = Cliente;
     }
 
-    public int getCodVenda() {
-        return codVenda;
+    public int getID() {
+        return id;
     }
 
-    public void setCodVenda(int codVenda) {
-        this.codVenda = codVenda;
+    public void setID(int id) {
+        this.id = id;
     }
 
-    public String getData() {
+    public Date getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(Date data) {
         this.data = data;
     }
     

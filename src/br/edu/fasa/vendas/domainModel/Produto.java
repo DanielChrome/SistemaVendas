@@ -10,16 +10,16 @@ package br.edu.fasa.vendas.domainModel;
  * @version 0.3.17
  */
 public class Produto {
-    private int codProduto;
+    private int id;
     private String descricao;
     private int estoque;
 
-    public int getCodProduto() {
-        return codProduto;
+    public int getID() {
+        return id;
     }
 
-    public void setCodProduto(int codProduto) {
-        this.codProduto = codProduto;
+    public void setID(int id) {
+        this.id = id;
     }
 
     public String getDescricao() {
