@@ -12,14 +12,14 @@ package br.edu.fasa.vendas.domainModel;
 public class Venda {
     private int codVenda;
     private String data;
-    private int codCliente;
+    private Cliente Cliente;
 
-    public int getCodCliente() {
-        return codCliente;
+    public Cliente getCliente() {
+        return Cliente;
     }
 
-    public void setCodCliente(int codCliente) {
-        this.codCliente = codCliente;
+    public void setCliente(Cliente Cliente) {
+        this.Cliente = Cliente;
     }
 
     public int getCodVenda() {
@@ -37,5 +37,7 @@ public class Venda {
     public void setData(String data) {
         this.data = data;
     }
+
+    
     
 }

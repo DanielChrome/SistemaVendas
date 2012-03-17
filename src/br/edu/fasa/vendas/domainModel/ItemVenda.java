@@ -11,25 +11,25 @@ package br.edu.fasa.vendas.domainModel;
  * 
  */
 public class ItemVenda {
-    private int codVenda;
-    private int codProduto;
+    private Venda Venda;
+    private Produto Produto;
     private int quantidade;
     private float valor;
 
-    public int getCodProduto() {
-        return codProduto;
+    public Produto getProduto() {
+        return Produto;
     }
 
-    public void setCodProduto(int codProduto) {
-        this.codProduto = codProduto;
+    public void setProduto(Produto Produto) {
+        this.Produto = Produto;
     }
 
-    public int getCodVenda() {
-        return codVenda;
+    public Venda getVenda() {
+        return Venda;
     }
 
-    public void setCodVenda(int codVenda) {
-        this.codVenda = codVenda;
+    public void setVenda(Venda Venda) {
+        this.Venda = Venda;
     }
 
     public int getQuantidade() {
@@ -47,5 +47,7 @@ public class ItemVenda {
     public void setValor(float valor) {
         this.valor = valor;
     }
+
+    
     
 }
