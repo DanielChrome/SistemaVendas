@@ -11,9 +11,18 @@ package br.edu.fasa.vendas.domainModel;
  * 
  */
 public class ItemVenda {
+    private int id;
     private Produto Produto;
     private int quantidade;
     private float valor;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Produto getProduto() {
         return Produto;
