@@ -11,7 +11,6 @@ package br.edu.fasa.vendas.domainModel;
  * 
  */
 public class ItemVenda {
-    private Venda Venda;
     private Produto Produto;
     private int quantidade;
     private float valor;
@@ -22,14 +21,6 @@ public class ItemVenda {
 
     public void setProduto(Produto Produto) {
         this.Produto = Produto;
-    }
-
-    public Venda getVenda() {
-        return Venda;
-    }
-
-    public void setVenda(Venda Venda) {
-        this.Venda = Venda;
     }
 
     public int getQuantidade() {
