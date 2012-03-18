@@ -13,7 +13,11 @@ public class Produto {
     private int id;
     private String descricao;
     private int estoque;
-
+    
+    public Produto(){
+        
+    }
+    
     public int getID() {
         return id;
     }

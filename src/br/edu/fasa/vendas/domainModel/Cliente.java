@@ -13,6 +13,10 @@ public class Cliente {
     private int id;
     private String nome;
     
+    public Cliente(){
+        
+    }
+    
     public int getId() {
         return id;
     }

@@ -15,7 +15,11 @@ public class ItemVenda {
     private Produto Produto;
     private int quantidade;
     private float valor;
-
+    
+    public ItemVenda(){
+        
+    }
+    
     public int getId() {
         return id;
     }

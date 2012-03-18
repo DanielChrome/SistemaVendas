@@ -16,6 +16,10 @@ public class Venda {
     private Cliente Cliente;
     private List<ItemVenda> itens; // letra minúscula e nome no plural
 
+    public Venda(){
+        
+    }
+    
     public Cliente getCliente() {
         return Cliente;
     }
