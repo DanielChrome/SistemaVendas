@@ -9,6 +9,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import java.util.Date;
 
 /**
  *
@@ -20,7 +24,16 @@ public class Teste implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
+    
+    @Column(name="nome",length=255)
+    private String nome;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name="datanasc")
+    private Date datanasc;
+    
+    
+    
     public Long getId() {
         return id;
     }

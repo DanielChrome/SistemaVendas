@@ -10,6 +10,8 @@ package br.edu.fasa.vendas.domainModel;
  * @version 0.3.17
  * 
  */
+
+
 public class ItemVenda {
     private int id;
     private Produto Produto;
