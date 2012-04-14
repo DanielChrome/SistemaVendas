@@ -3,19 +3,35 @@
  * and open the template in the editor.
  */
 package br.edu.fasa.vendas.domainModel;
-
+import java.io.Serializable;
+import javax.persistence.*;
 /**
  *
  * @author DanielChrome
- * @version 0.3.17
+ * @version 0.4.13
  * 
  */
 
-
+@Entity
+@Table(name="itemvenda")
 public class ItemVenda {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
+    
+    
+    @ManyToOne(cascade= CascadeType.PERSIST)
+    @JoinColumn(name="venda")
+    private Produto Venda;
+    
+    @ManyToOne(cascade= CascadeType.PERSIST)
+    @JoinColumn(name="produto")
     private Produto Produto;
+    
+    @Column
     private int quantidade;
+    
+    @Column
     private float valor;
     
     public ItemVenda(){

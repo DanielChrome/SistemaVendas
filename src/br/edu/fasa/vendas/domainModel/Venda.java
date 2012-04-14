@@ -5,15 +5,27 @@
 package br.edu.fasa.vendas.domainModel;
 import java.util.List;
 import java.util.Date;
+import java.io.Serializable;
+import javax.persistence.*;
 /**
  *
  * @author DanielChrome
- * @version 0.3.17
+ * @version 0.4.13
  */
-public class Venda {
+@Entity
+public class Venda implements Serializable {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
-    private Date data;
-    private Cliente Cliente;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date data_venda;
+    
+    @ManyToOne(cascade= CascadeType.PERSIST)
+    @JoinColumn(name="cliente")
+    private Cliente cliente;
+    
+    @OneToMany(cascade= CascadeType.ALL, targetEntity=ItemVenda.class)
     private List<ItemVenda> itens; // letra minúscula e nome no plural
 
     public Venda(){
@@ -21,11 +33,11 @@ public class Venda {
     }
     
     public Cliente getCliente() {
-        return Cliente;
+        return cliente;
     }
 
-    public void setCliente(Cliente Cliente) {
-        this.Cliente = Cliente;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public int getID() {
@@ -37,11 +49,11 @@ public class Venda {
     }
 
     public Date getData() {
-        return data;
+        return data_venda;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setData(Date data_venda) {
+        this.data_venda = data_venda;
     }
     
     public void addItem(ItemVenda iv){
