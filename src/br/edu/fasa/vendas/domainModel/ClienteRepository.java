@@ -10,4 +10,6 @@ package br.edu.fasa.vendas.domainModel;
  */
 public interface ClienteRepository extends Repository<Cliente>{
     
+    
+    
 }

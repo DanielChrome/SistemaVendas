@@ -13,7 +13,7 @@ import java.util.List;
 public interface Repository <T>{
     
     void salvar (T obj);
-    T abrid(Long Id);
+    T abrir(Long Id);
     void apagar(T obj);
     List<T> listar();
     
